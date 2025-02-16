@@ -1,0 +1,87 @@
+xml
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simon Lithgow - Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0; /* Remove body margins */
+  display: flex;          /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  min-height: 100vh;        /* Ensure full viewport height */
+  background-color: #f0f0f0; /* Light background */
+}
+
+.container {
+  position: relative; /* Needed for absolute positioning of links */
+}
+
+.business-card-image {
+  width: 500px; /* Match image width */
+  height: 800px; /* Match image height */
+  display: block; /* Remove extra space below image */
+}
+
+.contact-link {
+  position: absolute;
+  color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+  text-decoration: none;
+  font-size: 14px; /* Adjust as needed */
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Position the links precisely over the text in the image */
+.email-link {
+  top: 58%; /* Adjust as needed */
+  left: 15%; /* Adjust as needed */
+  width: 70%;
+}
+
+.phone-link {
+  top: 68%; /* Adjust as needed */
+  left: 15%; /* Adjust as needed */
+  width: 70%;
+}
+
+.website-link {
+  top: 78%; /* Adjust as needed */
+  left: 15%; /* Adjust as needed */
+  width: 70%;
+}
+
+.download-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center; /* Center the text */
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="digital-signature-500x800px-simon.jpg" alt="Simon Lithgow Business Card" class="business-card-image">
+
+  <a href="mailto:simon.lithgow@hmesupport.com" class="contact-link email-link">simon.lithgow@hmesupport.com</a>
+  <a href="tel:+9710521384281" class="contact-link phone-link">+971052 138 4281</a>
+  <a href="https://smsminingsupport.com" class="contact-link website-link">smsminingsupport.com</a>
+
+  <a href="https://drive.google.com/file/d/1cXmnUF64vQ0yIiMpG2XSYzlwrzpMcNWz/export=download" class="download-button">Download Contact (vCard)</a>
+</div>
+
+</body>
+</html>
